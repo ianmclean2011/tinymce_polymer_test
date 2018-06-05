@@ -10,7 +10,7 @@ After cloning the repo, run 'bower install'
 
 Then run `polymer serve` to serve your element locally.
 
-If you go to http://127.0.0.1:8081/demo/ , you should see tinymce editor, within a webcomponent, open properly in fullscreen in latest Chrome, but not in FF/Edge/IE11. The commented out code in index.html was used to test creating a fullscreen editor not within a webcomponent, but still on a page loading shadow-dom polyfills, to show that it works fine in all browsers.
+If you go to http://127.0.0.1:8081/demo/ , you should see the tinymce editor, within a webcomponent, open properly in fullscreen in latest Chrome, but not in FF/Edge/IE11. The commented out code in index.html was used to test creating a fullscreen editor not within a webcomponent, but still on a page loading shadow-dom polyfills, to show that it works fine in all browsers.
 
 The error that shows up in FF is 'TypeError: m is undefined' using the minified file, or 'TypeError: doc is undefined' from InitContentBody.ts:168:4 using the non-minifed file.
 
