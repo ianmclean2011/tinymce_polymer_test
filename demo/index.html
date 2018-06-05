@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>tinymce_polymer_test-element demo</title>
+
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+		<!-- <script src='https://cloud.tinymce.com/stable/tinymce.min.js'></script> -->
+		<link rel="import" href="../tinymce-element.html">
+		<script>/*tinymce.init({
+		  selector: '#test',
+		  height: 500,
+		  plugins: 'fullscreen',
+		  toolbar: 'fullscreen',
+			inline: false,
+			setup: function(editor) {
+				if(!this.inline) {
+					editor.on('init', function() {
+						editor.execCommand('mceFullScreen');
+					});
+				}
+			}
+		});*/</script>
+
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic tinymce_polymer_test-element demo</h3>
+          <tinymce-element><div id='component-test'></div></tinymce-element>
+
+	  <!-- <h3>Basic tinymce_polymer_test-element demo</h3>
+      <div id='test'></div> -->
+    </div>
+  </body>
+</html>

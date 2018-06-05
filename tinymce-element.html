@@ -1,0 +1,37 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="tinymce-import.html">
+
+<dom-module id="tinymce-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <slot></slot>
+  </template>
+	<script>
+		Polymer({
+			is: 'tinymce-element',
+			attached: function() {
+				this._initTinyMCE();
+			},
+			_initTinyMCE: function() {
+				tinymce.init({
+				  selector: '#component-test',
+				  height: 500,
+				  plugins: 'fullscreen',
+				  toolbar: 'fullscreen',
+					inline: false,
+					setup: function(editor) {
+						if(!this.inline) {
+							editor.on('init', function() {
+								editor.execCommand('mceFullScreen');
+							});
+						}
+					}
+			});
+		}
+	});
+	</script>
+</dom-module>
